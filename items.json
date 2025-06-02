@@ -1,0 +1,16 @@
+[
+  {
+    "enunciado": "¿Cual de estos es una fruta?",
+    "opciones": ["Manzana", "Auto", "Mesa", "Zapato"],
+    "respuestaCorrecta": "Manzana",
+    "nivelBloom": "Comprensión",
+    "tipo": "selección_multiple"
+  },
+  {
+    "enunciado": "Una semana tiene mas dias que un mes.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuestaCorrecta": "Falso",
+    "nivelBloom": "Comprensión",
+    "tipo": "verdadero_falso"
+  }
+]

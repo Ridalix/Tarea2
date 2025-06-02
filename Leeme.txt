@@ -1,0 +1,82 @@
+Programa para pruebas (tests) - Taxonomía de Bloom
+
+Este programa permite aplicar pruebas de selección múltiple y verdadero/falso, 
+clasificadas según la taxonomía de Bloom. 
+Desarrollado con Java y Swing, siguiendo un diseño backend/frontend.
+
+
+Alcances
+
+- Carga de ítems desde archivo JSON
+- Visualización de cantidad de preguntas (items) y tiempo estimado.
+- Navegación entre preguntas
+- Registro de respuestas.
+- Porcentaje de respuestas correctas por nivel de la Taxonomía de Bloom.
+- Porcentaje de respuestas correctas por tipo.
+- Revisión de cada ítem:
+   Muestra respuesta del usuario, respuesta correcta y si fue correcta.
+- Soporte para seleccion multiple y verdadero/falso.
+
+---
+
+Estructura del proyecto
+
+
+
+├── backend/
+│   ├── TestManager.java
+│   └── Item.java
+├── frontend/
+│   ├── MainFrame.java
+│   ├── TestPanel.java
+│   ├── ResumePanel.java
+│   └── RevisionPanel.java
+├── items.json
+└── README.md
+
+
+Instrucciones de ejecución
+
+Requisitos
+   - JDK 8 o superior
+   - IDE como IntelliJ IDEA, Eclipse o NetBeans (opcional)
+
+Compilación y ejecución
+
+   con terminal:
+
+   
+   javac backend/*.java frontend/*.java
+   java frontend.MainFrame
+   
+
+   ejecutar MainFrame desde IDE.
+
+Carga de ítems:
+   - Presionar "Cargar archivo de ítems".
+   - Seleccionar un archivo .json que contenga los ítems.
+
+
+Formato del archivo json
+
+Cada ítem debe estar descrito como un objeto con los siguientes campos:
+
+
+[
+  {
+    "enunciado": "texto",
+     ["Opcion", "Opcion", "Opcion", "Opcion"],
+    "respuestaCorrecta": "Opcion",
+    "nivelBloom": "Nivel",
+    "tipo": "selección_multiple"
+  },
+  {
+    "enunciado": "texto",
+	"opciones": ["Verdadero", "Falso"],
+    "respuestaCorrecta": "Verdadero",
+    "nivelBloom": "Nivel",
+    "tipo": "verdadero_falso"
+  }
+]
+
+
